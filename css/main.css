@@ -1,0 +1,266 @@
+@import url("reset.css");
+
+@font-face {
+	font-family: "Invasion 2000";
+	src: url("./fonts/INVASION2000.ttf");
+}
+@font-face {
+	font-family: "Bitter HT";
+	src: url("./fonts/Bitter-Regular.otf");
+}
+@font-face {
+	font-family: "Bitter HT Italic";
+	src: url("./fonts/Bitter-Italic.otf");
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	/*box-shadow: inset 2px 0 25px 2px #3d3d3d;*/
+	height: 100%;
+	min-height: 100%;
+}
+body {
+	height: 100%;
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	min-width: 250px;
+	position: relative;
+	background: #f4f142 linear-gradient(145deg, #f4cd41 0%, #fff39e 100%) no-repeat fixed;
+}
+.bitter-font-regular {
+	font-family: "Bitter HT";
+}
+.bitter-font-italic {
+	font-family: "Bitter HT Italic";
+}
+#banner {
+	background: #1b1b1b;
+	width: 100%;
+	padding: 25px;
+	box-shadow: 0px 2px 25px 2px #3d3d3d;
+}
+header a {
+	color: #d3d3d3;
+	text-decoration: none;
+}
+#name {
+	letter-spacing: 0.201em;
+	font-size: 24px;
+	display: inline-block;
+	position: relative;
+	transform: translateY(40%);
+}
+#name, #name .active:visited {
+	color: #faebd7;
+}
+#name .active:hover, .local-nav .active:hover {
+	color: #f4cd41;
+}
+nav {
+	display: inline-block;
+	width: 80%;
+	max-width: 80%;
+}
+.nav-option {
+	margin-left: 12px;
+}
+nav .social-nav, .social {
+	float: right;
+}
+.local-nav {
+	display: inline-block;
+	position: relative;
+	margin-left: 30px;
+	transform: translateY(50%);
+}
+#content {
+	background-size: cover;
+	background-position: center center;
+}
+.nav-option {
+	display: inline-block;
+}
+.social-nav {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+.social-nav img {
+	height: 32px;
+	width: 32px;
+	filter: invert(100%);
+	vertical-align: top;
+}
+.social-nav img:hover {
+	filter: invert(100%) drop-shadow(4px 4px 0 #f4cd41);
+}
+#home {
+	padding: 60px 100px;
+	height: 100%;
+	max-height: 100%;
+}
+#home .slide-right-animation {
+	font-size: 100px;
+	position: relative;
+	left: -1000px;
+	animation: slide-right 1s forwards;
+	-webkit-animation: slide-right 1s forwards;
+}
+.about-me {
+	margin-top: 290px;
+	padding: 100px 0;
+}
+.about-me h1 {
+	font-size: 42px;
+	font-style: italic;
+}
+.about-me p {
+	margin-top: 15px;
+	font-size: 24px;
+	letter-spacing: .25rem;
+	line-height: 1.1em;
+	width: 50%;
+}
+.section-header {
+	padding: 25px;
+}
+#projects {
+	background-color: #1b1b1b;
+	color: #f3f3f3;
+	padding: 60px 100px;
+	text-align: center;
+}
+#projects-header {
+	font-size: 48px;
+	margin-bottom: 25px;
+}
+#contact-header {
+	font-size: 48px;
+	margin-bottom: 25px;
+}
+#projects-box {
+	width: 75%;
+	margin: 0 auto;
+}
+.project-pane {
+	border: 2px solid #f4cd41;
+	border-radius: 8px;
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+.project-image {
+	width: 100%;
+	height: 330px;
+}
+.project-image:hover {
+	filter: brightness(135%);
+}
+.project-info {
+	background-color: #2b2b2b;
+	text-align: left;
+	padding: 10px;
+}
+.project-info h2 {
+	font-size: 1.35rem;
+	letter-spacing: 0.1rem;
+	margin-bottom: 8px;
+}
+.project-info p {
+	font-size: 0.90rem;
+}
+#contact {
+	text-align: center;
+}
+#contact-info {
+	padding: 25px;
+}
+#contact-info h2 {
+	font-size: 32px;
+	margin-bottom: 32px;
+}
+#contact a, #contact a:visited {
+	text-decoration: underline;
+	color: #000000;
+}
+.text-blink {
+	animation: blink-animation 1s infinite;
+	-webkit-animation: blink-animation 1s infinite;
+}
+.text-center {
+	text-align: center;
+}
+.half-col {
+	width: 47%;
+}
+.d-inline-block {
+	display: inline-block;
+}
+.spacer-right-8 {
+	margin-right: 8px;
+}
+.va-top {
+	vertical-align: top;
+}
+.divider {
+	margin: 10px auto;
+	width: 5%;
+	height: 5px;
+	background-color: #f4cd41;
+}
+.divider-black {
+	margin: 10px auto;
+	width: 5%;
+	height: 5px;
+	background-color: #000000;
+}
+.in-progress {
+	font-style: italic;
+	font-size: 20px;
+	padding: 15px;
+}
+@keyframes blink-animation {
+	0% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes blink-animation {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes slide-right {
+	100% {
+		left: 0;
+	}
+}
+@-webkit-keyframes slide-right {
+	100% {
+		left: 0;
+	}
+}
