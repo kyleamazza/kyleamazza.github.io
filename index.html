@@ -3,86 +3,105 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Kyle Mazza</title>
-		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<link rel="stylesheet" href="css/main2.css" type="text/css">
 		<!--[if IE]>
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<header id="banner">
-			<h1 id="name" class="bitter-font-regular"><a href="index.html" class="active">Kyle Mazza</a></h1>
-			<nav>
-				<ul class="local-nav">
-					<li class="active nav-option"><a href="#home">Home</a></li>
-					<li class="active nav-option"><a href="#projects">Projects</a></li>
-					<li class="active nav-option"><a href="./resume/Kyle_Mazza_Resume.pdf">Resume</a></li>
-					<li class="active nav-option"><a href="#contact">Contact</a></li>
-				</ul>
-				<ul class="social-nav">
-					<li class="active nav-option social"><a href="https://www.linkedin.com/in/kyle-mazza-1b1b87148"><img src="./images/linkedin-logo.png" alt="LinkedIn"></a></li>
-					<li class="active nav-option social"><a href="https://github.com/kylemazza"><img src="./images/github-logo.png" alt="Github"></a></li>
-				</ul>
-			</nav>
-		</header>
-		<section id="home">
-			<h1 class="bitter-font-italic slide-right-animation">hello world<span class="text-blink">_</span></h1>
-			<div class="content-pane bitter-font-regular">
-				<section class="about-me">
-					<h1>Kyle Mazza</h1>
-					<p>I am a 3rd year Computer Engineering and Computer Science student at Cal State Long Beach!</p>
-				</section>
-			</div>
-		</section>
-		<section id="projects">
-			<header class="section-header"
-				<h1 id="projects-header" class="bitter-font-regular text-center">Projects</h1>
+		<div class="container">
+			<header id="banner">
+				<h1 id="name" class="bitter-font-regular"><a href="index.html" class="active">Kyle Mazza</a></h1>
+				<nav>
+					<div id="burger">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					<ul class="local-nav toggle">
+						<li class="active nav-option"><a href="#home">Home</a></li>
+						<li class="active nav-option"><a href="#projects">Projects</a></li>
+						<li class="active nav-option"><a href="./resume/Kyle_Mazza_Resume.pdf">Resume</a></li>
+						<li class="active nav-option"><a href="#contact">Contact</a></li>
+					</ul>
+					<ul class="social-nav">
+						<li class="active nav-option social"><a href="https://www.linkedin.com/in/kyle-mazza-1b1b87148"><img src="./images/linkedin-logo.png" alt="LinkedIn"></a></li>
+						<li class="active nav-option social"><a href="https://github.com/kylemazza"><img src="./images/github-logo.png" alt="Github"></a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="home">
+				<h1 class="bitter-font-italic slide-right-animation">hello world<span class="text-blink">_</span></h1>
+				<div class="content-pane bitter-font-regular">
+					<section class="about-me">
+						<h1>Kyle Mazza</h1>
+						<p class="text-hide"><span class="hide">I am a </span>3rd year Computer Engineering and Computer Science student <span class="hide">at Cal State Long Beach!</span></p>
+					</section>
+				</div>
+			</section>
+		</div>
+		<section id="about">
+			<header class="section-header">
+				<h1 id="about-header" class="bitter-font-regular text-center">About</h1>
 				<div class="divider"></div>
 			</header>
+			<p>I am currently a student at CSU Long Beach studying Computer Science. In my free time,
+			I'm always doing something creative, whether it be programming, music, something entirely new!
+			I push myself every day to learn new things and experiment with different ways of doing things..</p>
+			<p>I'm 23 years old from sunny Southern California. I began programming in December of 2016 and
+			have been chugging along ever since. I've been studying web technologies with an aim towards
+			eventually bringing WebVR to a widespread reality.</p>
+		</section>
+		<section id="projects">
+			<header class="section-header">
+				<h1 id="projects-header" class="bitter-font-regular text-center">Projects</h1>
+				<div class="divider-black"></div>
+			</header>
 			<section id="projects-box">
-				<section class="half-col d-inline-block spacer-right-8 va-top">
-					<div class="project-pane">
-						<a href="https://github.com/kylemazza/Settlers-of-Mars"><img class="project-image" src="./images/som.png" alt="Settlers of Mars" /></a>
-						<div class="project-info">
-							<h2 class="bitter-font-regular">Settlers of Mars</h2>
-							<p class="bitter-font-italic">Settlers of Catan clone made in Java with local 4-player multiplayer</p>
-						</div>
+				<div class="project-pane" id="settlers">
+					<a href="https://github.com/kylemazza/Settlers-of-Mars"><img class="project-image" src="./images/som.png" alt="Settlers of Mars" /></a>
+					<div class="project-info">
+						<h2 class="bitter-font-regular">Settlers of Mars</h2>
+						<p class="bitter-font-italic">Settlers of Catan clone made in Java with local 4-player multiplayer</p>
 					</div>
-					<div class="project-pane">
-						<a href="https://github.com/kylemazza/PHP-Pokedex"><img class="project-image" src="./images/pokedatabase.png" alt="PokeDatabase" /></a>
-						<div class="project-info">
-							<h2 class="bitter-font-regular">Pokedex</h2>
-							<p class="bitter-font-italic">Pokedex website built using the PokeAPI, PHP, and MySQL</p>
-						</div>
+				</div>
+				<div class="project-pane" id="maestros">
+					<a href="https://maestrosgame.com"><img class="project-image" src="./images/maestrosposter_cropped3.jpg" alt="The Maestros" /></a>
+					<div class="project-info">
+						<h2 class="bitter-font-regular">The Maestros</h2>
+						<p class="bitter-font-italic">Website made for Systence Games using jQuery and Bootstrap</p>
 					</div>
-				</section>
-				<section class="half-col d-inline-block spacer-right-8 va-top">
-					<div class="project-pane">
-						<a href="https://github.com/kylemazza/The-Forum"><img class="project-image" src="./images/the-forum.png" alt="The Forum" /></a>
-						<div class="project-info">
-							<h2 class="bitter-font-regular">The Forum</h2>
-							<p class="bitter-font-italic">A simple CRUD website built using Ruby on Rails</p>
-						</div>
+				</div>
+				<div class="project-pane" id="pokedex">
+					<a href="https://github.com/kylemazza/PHP-Pokedex"><img class="project-image" src="./images/pokedatabase.png" alt="PokeDatabase" /></a>
+					<div class="project-info">
+						<h2 class="bitter-font-regular">Pokedex</h2>
+						<p class="bitter-font-italic">Pokedex website built using the PokeAPI, PHP, and MySQL</p>
 					</div>
-					<div class="project-pane">
-						<img class="project-image" src="./images/coming-soon.png" />
-						<div class="project-info">
-							<h2 class="bitter-font-regular">More Coming Soon...</h2>
-							<p class="bitter-font-italic">MEAN, ReactJS, Class Management Web App, and more!</p>
-						</div>
-				</section>
+				</div>
+				<div class="project-pane" id="coming">
+					<a href="#"><img class="project-image" src="./images/coming-soon.png" /></a>
+					<div class="project-info">
+						<h2 class="bitter-font-regular">More Coming Soon...</h2>
+						<p class="bitter-font-italic">MEAN, ReactJS, Class Management Web App, and more!</p>
+					</div>
+				</div>
 			</section>
 		</section>
 		<section id="contact">
-			<header class="section-header"
+			<header class="section-header">
 				<h1 id="contact-header" class="bitter-font-regular text-center">Contact</h1>
-				<div class="divider-black"></div>
+				<div class="divider"></div>
 			</header>
 			<div id="contact-info">
 				<h2 class="bitter-font-italic">Email</h2>
-				<a class="bitter-font-regular" href="mailto:kylemazza@gmail.com">kylemazza@gmail.com</a>
+				<a class="bitter-font-regular" href="mailto:kylemazza@gmail.com">kyleamazza@gmail.com</a>
 			</div>
 			<p class="in-progress">Website still under construction! Thanks for your patience!</p>
 		</section>
+		<script type="text/javascript" src="./js/vanilla-tilt.min.js"></script>
+		<script type="text/javascript" src="./js/index.js"></script>
 	</body>
 </html>	
 
