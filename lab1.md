@@ -4,7 +4,7 @@
 <head>
     <title>CECS 378 Lab #1</title>
     <meta name="description" content="Lab 1 for CSULB CECS 378" />
-    <script defer type="text/javascript" src="lab1_kylemazza.js"></script>
+    <script defer type="text/javascript" src="js/lab1_kylemazza.js"></script>
 </head>
 
 <body>
